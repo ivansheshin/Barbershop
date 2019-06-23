@@ -79,21 +79,21 @@
 			<h3>ЗАПИСАТЬСЯ</h3>
 			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
 			<form class="user" method="post" action="#">
-				<p>
+				<p class="user-data">
 			<label for="user-data">Дата</label>
-			<input type="text" name="ДАТА" placeholder="ДАТА">
+			<input id="user-data" type="text" name="ДАТА"  placeholder="ДАТА">
 				</p>
-				<p>
+				<p class="user-time">
 			<label for="user-time">Время</label>
-			<input type="text" name="ВРЕМЯ" placeholder="10:00">
+			<input type="text" name="ВРЕМЯ" id="user-time" placeholder="10:00">
 				</p>
-				<p>
+				<p class="user-name">
 			<label for="user-name">Ваше имя</label>
-			<input type="text" name="ВАШЕ ИМЯ" placeholder="Борода">
+			<input type="text" name="ВАШЕ ИМЯ" id="user-name" placeholder="Борода">
 		</p>
-		<p>
+		<p class="user-phone">
 			<label for="user-phone">Телефон</label>
-			<input type="text" name="ТЕЛЕФОН" placeholder="+7 123 456-78-90">
+			<input type="tel" name="ТЕЛЕФОН" id="user-phone" placeholder="+7 123 456-78-90">
 		</p>
 			<a class="button" href="">ОТПРАВИТЬ</a>
 			</form>
@@ -116,10 +116,10 @@
 		</div>
 		<p>
 			РАЗРАБОТАНО:
-			<a class="button" href="#">HTML ACADEMY</a>
+			<button class="button" type="submit">Отправить</button>
 
 		</p>
-		
+
 
 	</footer>
 </body>
