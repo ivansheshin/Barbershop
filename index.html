@@ -10,11 +10,11 @@
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li>
-					<a href="">Информация</a>
-					<a href="">Новости</a>
-					<a href="">Прайс-лист</a>
-					<a href="">Магазин</a>
-					<a href="">Контакты</a>
+					<a href="#">Информация</a>
+					<a href="#">Новости</a>
+					<a href="#">Прайс-лист</a>
+					<a href="#">Магазин</a>
+					<a href="#">Контакты</a>
 				</li>
 			</ul>
 		</nav>
@@ -56,9 +56,9 @@
 		</section>
 		<section class="gallerey">
 			<h3>ФОТОГАЛЕРЕЯ</h3>
-			<a href=""><img src="d:\1\img\barber.jpg"></a>
-			<a class="button" href="">НАЗАД</a>
-			<a class="button" href="">ВПЕРЕД</a>
+			<a href="#"><img src="img\barber.jpg"></a>
+			<a class="button" href="#">НАЗАД</a>
+			<a class="button" href="#">ВПЕРЕД</a>
 		</section>
 		<section class="contact-information">
 			<h3>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
@@ -72,17 +72,31 @@
 				ПН-ПТ: С 10:00 до 22:00<br>
 				СБ-ВС: С 10:00 до 19:00
 			</p>
-			<a class="button" href="">КАК ПРОЕХАТЬ</a>
-			<a class="button" href="">ОБРАТНАЯ СВЯЗЬ</a>
+			<a class="button" href="#">КАК ПРОЕХАТЬ</a>
+			<a class="button" href="#">ОБРАТНАЯ СВЯЗЬ</a>
 		</section>
 		<section class="signup">
 			<h3>ЗАПИСАТЬСЯ</h3>
 			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-			<input type="text" name="ДАТА">
-			<input type="text" name="ВРЕМЯ">
-			<input type="text" name="ВАШЕ ИМЯ">
-			<input type="text" name="ТЕЛЕФОН">
+			<form class="user" method="post" action="#">
+				<p>
+			<label for="user-data">Дата</label>
+			<input type="text" name="ДАТА" placeholder="ДАТА">
+				</p>
+				<p>
+			<label for="user-time">Время</label>
+			<input type="text" name="ВРЕМЯ" placeholder="10:00">
+				</p>
+				<p>
+			<label for="user-name">Ваше имя</label>
+			<input type="text" name="ВАШЕ ИМЯ" placeholder="Борода">
+		</p>
+		<p>
+			<label for="user-phone">Телефон</label>
+			<input type="text" name="ТЕЛЕФОН" placeholder="+7 123 456-78-90">
+		</p>
 			<a class="button" href="">ОТПРАВИТЬ</a>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -95,16 +109,17 @@
 		<div class="footer-socnet" >
 			<b> ДАВАЙТЕ ДРУЖИТЬ</b>
 			<ul>
-			<li><a class="socnet" href="">VK</a></li>
-			<li><a class="socnet" href="">FB</a></li>
-			<li><a class="socnet" href="">Instagram</a></li>
+			<li><a class="socnet" href="#">VK</a></li>
+			<li><a class="socnet" href="#">FB</a></li>
+			<li><a class="socnet" href="#">Instagram</a></li>
 			</ul>
 		</div>
 		<p>
 			РАЗРАБОТАНО:
-			<a class="button" href="">HTML ACADEMY</a>
+			<a class="button" href="#">HTML ACADEMY</a>
 
 		</p>
+		
 
 	</footer>
 </body>
