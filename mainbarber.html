@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп "Nice"</title>
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="innerpage">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
@@ -22,20 +22,21 @@
 	<main class="container">
 		<section class="features">
 			<ul class="features-list">
-			<li class="features-item">
-				<h3>БЫСТРО</h3>
-				<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ! </p>
-			</li>
-			<li class="features-item">
-				<h3>КРУТО</h3>
-				<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
-			</li>
-			<li class="features-item">
-				<h3>ДОРОГО</h3>
-				<p>НАШИ МАСТЕРА - ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
-			</li>
+				<li class="features-item">
+					<h3>БЫСТРО</h3>
+						<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ! </p>
+				</li>
+				<li class="features-item">
+					<h3>КРУТО</h3>
+						<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+				</li>
+				<li class="features-item">
+					<h3>ДОРОГО</h3>
+						<p>НАШИ МАСТЕРА - ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+				</li>
 			</ul>
 		</section>
+		<div class="columns">
 		<section class="news">
 			<h3>НОВОСТИ</h3>
 			<ul class="news-list">
@@ -52,14 +53,18 @@
 					<time datetime="2019-01-18">18 января</time>
 				</li>
 			</ul>
-			<a class="button" href="">Все новости</a>
+			<a class="button" href="#">Все новости</a>
 		</section>
 		<section class="gallerey">
 			<h3>ФОТОГАЛЕРЕЯ</h3>
-			<a href="#"><img src="img\barber.jpg"></a>
-			<a class="button" href="#">НАЗАД</a>
-			<a class="button" href="#">ВПЕРЕД</a>
+			<figure class="gallerey-content">
+			<a href="#"><img src="img\barber.jpg" width="286" height="164" alt="Интерьер"></a>
+			</figure>
+			<button class="button" type="button">НАЗАД</button>
+			<button class="button" type="button">ВПЕРЕД</button>
 		</section>
+		</div>
+		<div class="columns">
 		<section class="contact-information">
 			<h3>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
 			<p>
@@ -72,8 +77,8 @@
 				ПН-ПТ: С 10:00 до 22:00<br>
 				СБ-ВС: С 10:00 до 19:00
 			</p>
-			<a class="button" href="#">КАК ПРОЕХАТЬ</a>
-			<a class="button" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+			<button class="button">КАК ПРОЕХАТЬ</button>
+			<button class="button">ОБРАТНАЯ СВЯЗЬ</button>
 		</section>
 		<section class="signup">
 			<h3>ЗАПИСАТЬСЯ</h3>
@@ -81,7 +86,7 @@
 			<form class="user" method="post" action="#">
 				<p class="user-data">
 			<label for="user-data">Дата</label>
-			<input id="user-data" type="text" name="ДАТА"  placeholder="ДАТА">
+			<input id="user-data" type="text" name="ДАТА"  placeholder="08.10.2019">
 				</p>
 				<p class="user-time">
 			<label for="user-time">Время</label>
@@ -98,12 +103,13 @@
 			<a class="button" href="">ОТПРАВИТЬ</a>
 			</form>
 		</section>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<p>
 			БАРБЕШОП "БОРОДИНСКИЙ"<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д.19/8<br>
-			<a href="">КАК НАС НАЙТИ</a><br>
+			<a href="" class="footer-contact">КАК НАС НАЙТИ</a><br>
 			ТЕЛЕФОН: +7(495)666-02-66
 		</p>
 		<div class="footer-socnet" >
@@ -114,14 +120,40 @@
 			<li><a class="socnet" href="#">Instagram</a></li>
 			</ul>
 		</div>
-		<p>
-			РАЗРАБОТАНО:
+		<p class="html-academy">
+			РАЗРАБОТАНО:HTML Academy
 			<button class="button" type="submit">Отправить</button>
-
 		</p>
-
-
 	</footer>
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой личный логин и пароль</p>
+		<form class="login-form" method="post" action="#">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" type="text" name="login" placeholder="Логин" id="user-login">
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" type="text" name="password" placeholder="Пароль" id="user-password">
+			</p>	
+			<p class="rememberme">
+				<label class="checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkboxindicator"></span>
+					Запомните меня
+				</label>
+				<a class="forget" href="#">Я забыл пароль</a>
+			</p>
+			<button class="button">ВОЙТИ</button>	
+		</form>
+		<button class="modal-class">ЗАКРЫТЬ</button>
+	</section>
+	<section class="modal modal-map">
+	<h2 class="visually-hidden">Как до нас добраться</h2>
+	<p><img src="img/map1.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+		<button class="modal-class">ЗАКРЫТЬ</button>
+	</section>
 </body>
 </html>
 

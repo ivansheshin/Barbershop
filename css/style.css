@@ -1,3 +1,169 @@
-body {background-color: orange}
+body{
+	margin: 0;
+	padding: 0;
 
+	font-family: "PT Sans Narrow, Arial, sans-serif"
+	font-size: 14px;
+	line-height: 24px;
+	font-width: 700px;
+	color: #ffffff;
+	text-transform: uppercase;
 
+	background-color: #000000;
+	background-image: url(d:/1/img/bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+a{text-decoration: none;}
+
+.features-list{
+	list-style: none;
+}
+.main-navigation{
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #000000;
+
+}
+.site-navigation{
+	list-style: none;
+}
+.site-navigation a{
+	color: #ffffff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus{
+	background-color: #242424
+}
+.futures-list{
+	list-style: none;
+}
+.features-item {
+	text-align: center;
+}
+.features-item h3 {
+	font-size: 30px;
+	line-height: 42px;
+}
+.columns{
+	color: #000000;
+
+	background-color: #f8f5f2;
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+.columns h3{
+	font-size: 30px;
+	line-height: 42px;
+}
+.news-list{
+	list-style: none;
+}
+.news-list time{
+	text-transform: none;
+}
+.gallerey-content{
+	background-color: #cccccc;
+	border: 7px solid #ffffff;
+}
+.button{
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #000000;
+	border: none;
+}
+.button:hover,
+.button:active,
+.button:focus{
+	background-color: #663d15
+}
+.user input{
+	font: inherit;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+.user input:focus{
+	border-color: #663d15;
+}
+.main-footer{
+	color: #ffffff;
+	background-color: #212121;
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+.footer-contact{
+	color: #ffffff;
+	text-decoration: underline;
+}
+.footer-contact:hover,
+.footer-contact:focus
+{
+	text-decoration: none;
+}
+.footer-socnet{
+	text-align: center;
+}
+.footer-socnet ul{
+	list-style: none;
+}
+.socnet{
+	color: #ffffff;
+}
+.html-academy {
+	text-align: center;
+	}
+.button .html-academy:hover,
+.button .html-academy:focus {
+	color: #000000;
+	background-color: #ffffff;
+}
+.modal{
+	color: #000000;
+
+	background-color: #f8f3f0;
+	background-position: 0 0 ;
+	background-repeat: repeat;
+}
+.modal h2{
+	font-size: 30px;
+	line-height: 42px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	font: inherit;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f9f5f2;
+	border: 2px solid #000000;
+}
+.login-form input{
+	border-color: #663d15;
+}
+.checkbox:hover,
+.checkbox:focus{
+	color: #663d15;
+}
+.forget{
+	color: #000000;
+	text-decoration: underline;
+
+}
+.forget:hover,
+.forget:focus{
+	text-decoration: none;
+}
+.innterpage {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
