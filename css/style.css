@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT Sans Narrow, Arial, sans-serif"
+	font-family: "PT Sans Narrow, Arial, sans-serif";
 	font-size: 14px;
 	line-height: 24px;
 	font-width: 700px;
@@ -14,8 +14,19 @@ body{
 	background-position: top center;
 	background-repeat: no-repeat;
 }
-a{text-decoration: none;}
+a {
+	text-decoration: none;
+}
 
+
+.innerpage{
+	color: #000000;
+
+	background-color: #f9f6f3;
+	background-image: url("img/Layer 24 copy.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
 .features-list{
 	list-style: none;
 }
@@ -167,3 +178,46 @@ a{text-decoration: none;}
   background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+.photoproduct-preview {
+  list-style: none;
+}
+.photoproduct-preview{
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1)
+}
+.photoproduct{
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1)
+}
+.product-article{
+	text-align: right;
+	color: #aeaeae;
+}
+.catalog-item-pricebuy b{
+	background-color: #e5e5e5;
+
+	text-align: center;
+	line-height: 20px;
+}
+.productinfo h3{
+	font-size: 24px;
+	line-height: 30px;
+}
+.productinfo ul{
+	list-style: none;
+}
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
