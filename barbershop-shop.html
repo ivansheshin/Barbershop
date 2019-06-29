@@ -6,20 +6,22 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="innerpage">
-	<header>
-		<nav>
-			<ul class="site-navigation">
-				<a class="mainheaderlogo" href="mainbarber.html">
-					<img class="logo" src="#" width="111" height="24">
+	<header class="main-header">
+		<nav class="main-navigation comtainer">
+				<a class="main-header-logo" href="index.html">
+					<img src="img\logo.png" width="111" height="24">
 				</a>
+				<ul class="site-navigation">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Новости</a></li>
 				<li><a href="#">Прайс-лист</a></li>
-				<li><a class="site-navigation-current" href="#">Магазин</a></li>
+				<li><a class="site-navigation-current" href="barbershop-shop.html">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul>	
-				<li class="loginenter">Вход</li>
+				</ul>
+			<ul class="user-navigation">	
+				<li>
+                    <a class="login-link" href="login.html">Вход</a>
+                </li>
 			</ul>
 		</nav>
 	</header>
@@ -30,7 +32,8 @@
 			<li><a href="#">Магазин</a></li>
 			<li class="container-current">Средства для ухода</li>
 		</ul>
-		<section>
+		<div class="catalog-columns">
+		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" method="get" action="#">
 				<fieldset>
@@ -81,10 +84,10 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button type="submit" class="filter-button button">Показань</button>
+				<button type="submit" class="filter-button button">Показать</button>
 			</form>
 		</section>
-		<section>
+		<section class="catalog">
 			<h2 class="visually-hidden">Каталог товаров</h2>
 			<ul class="catalog-list">
 				<li class="catalog-item">
@@ -94,7 +97,7 @@
 							<span>"BAXTER OF CALIFORNIA"</span>						
 					</h3>
 					<p class="item-image">
-						<img src="#" width="220" height="165" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+						<img src="img\Layer 38.jpg" width="220" height="165" alt="Набор для путешествий BAXTER OF CALIFORNIA">
 					</p>
 					</a>					
 					<p class="catalog-item-pricebuy">
@@ -110,7 +113,7 @@
 							<span class="catalog-category-item">Увлажняющий кондиционер</span> 
 							<span class="catalog-category-nameitem">"BAXTER OF CALIFORNIA"</span>						
 					</h3>
-					<p class="item-image"><img src="#" width="220" height="165" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA"></p>
+					<p class="item-image"><img src="img\Layer 30.jpg" width="220" height="165" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA"></p>
 					</a>
 
 					<p class="catalog-item-pricebuy">
@@ -128,7 +131,7 @@
 					</h3>
 					<p class="item-image">
 						
-							<img src="#" width="220" height="165" alt="Гель для волос SUAVECITO"></p></a>
+							<img src="img\Layer 39.jpg" width="220" height="165" alt="Гель для волос SUAVECITO"></p></a>
 					<p class="catalog-item-pricebuy">
 						<b>290</b>
 						<a class="button" href="#">КУПИТЬ</a>
@@ -142,10 +145,10 @@
 							<span class="catalog-category-item">Глина для укладки волос</span> 
 							<span class="catalog-category-nameitem">"AMERICAN CREW"</span> 						
 					</h3>
-					<p class="item-image">img src="#" width="220" height="165" alt="Глина для укладки волос AMERICAN CREW"></p></a>
+					<p class="item-image"> <img src="img\Layer 32.jpg" width="220" height="165" alt="Глина для укладки волос AMERICAN CREW"></p></a>
 					<p class="catalog-item-pricebuy">
 						<b>500</b>
-						<a class="button" href="#">КУПИТЬ</a>
+						<a class="button" href="img\Layer 32.jpg">КУПИТЬ</a>
 					</p>
 				</li>
 
@@ -157,7 +160,7 @@
 							<span class="catalog-category-nameitem">"AMERICAN CREW"</span>
 					</h3>
 					<p class="item-image">
-							<img src="#" width="220" height="165" alt="Гель для волос AMERICAN CREW"></p></a>
+							<img src="img\Layer 33.jpg" width="220" height="165" alt="Гель для волос AMERICAN CREW"></p></a>
 					<p class="catalog-item-pricebuy">
 						<b>300</b>
 						<a class="button" href="#">КУПИТЬ</a>
@@ -172,7 +175,7 @@
 							<span class="catalog-category-nameitem">"BAXTER OF CALIFORNIA"</span>
 					</h3>
 					<p class="item-image">
-							<img src="#" width="220" height="165" alt="Набор для бритья BAXTER OF CALIFORNIA"></p></a>
+							<img src="img\Layer 42.jpg" width="220" height="165" alt="Набор для бритья BAXTER OF CALIFORNIA"></p></a>
 					<p class="catalog-item-pricebuy">
 						<b>3900</b>
 						<a class="button" href="#">КУПИТЬ</a>
@@ -187,15 +190,17 @@
 				<li class="pagintaion-item"><a href="#">4</a></li>
 			</ul>
 		</section>
+	</div>
 	</main>
 	<footer class="main-footer">
-		<p>
+        <div class="container">
+		<p class="fcontact">
 			БАРБЕШОП "БОРОДИНСКИЙ"<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б.КОНЮШЕННАЯ, Д.19/8<br>
-			<a href="" class="footer-contact">КАК НАС НАЙТИ</a><br>
+			<a href="#">КАК НАС НАЙТИ</a><br>
 			ТЕЛЕФОН: +7(495)666-02-66
 		</p>
-		<div class="footer-socnet" >
+		<div class="fsocnet" >
 			<b> ДАВАЙТЕ ДРУЖИТЬ</b>
 			<ul>
 			<li><a class="socnet" href="#">VK</a></li>
@@ -204,9 +209,10 @@
 			</ul>
 		</div>
 		<p class="html-academy">
-			РАЗРАБОТАНО:HTML Academy
-			<button class="button" type="submit">Отправить</button>
+			РАЗРАБОТАНО:
+			<button class="button" type="submit">HTML Academy</button>
 		</p>
+    </div>
 	</footer>
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
