@@ -99,7 +99,7 @@
 				ПН-ПТ: С 10:00 до 22:00<br>
 				СБ-ВС: С 10:00 до 19:00
 			</p>
-			<button class="button">КАК ПРОЕХАТЬ</button>
+			<button class="button conbutmap" >КАК ПРОЕХАТЬ</button>
 			<button class="button">ОБРАТНАЯ СВЯЗЬ</button>
 		</section>
 		<section class="signup">
@@ -176,7 +176,7 @@
 	</footer>
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите свой личный логин и пароль</p>
+		<p class="modal-description">Введите свой личный логин и пароль</p>
 		<form class="login-form" method="post" action="#">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
@@ -187,22 +187,23 @@
 				<input class="login-icon-password" type="text" name="password" placeholder="Пароль" id="user-password">
 			</p>	
 			<p class="rememberme">
-				<label class="checkbox">
+				<label class="login-checkbox">
 					<input type="checkbox" name="remember" class="visually-hidden">
 					<span class="checkboxindicator"></span>
 					Запомните меня
 				</label>
 				<a class="forget" href="#">Я забыл пароль</a>
 			</p>
-			<button class="button">ВОЙТИ</button>	
+			<button class="button" type="submit">ВОЙТИ</button>	
 		</form>
-		<button class="modal-class">ЗАКРЫТЬ</button>
+		<button class="modal-close" type="button">ЗАКРЫТЬ</button>
 	</section>
 	<section class="modal modal-map">
 	<h2 class="visually-hidden">Как до нас добраться</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1562667383979!5m2!1sen!2sru" width="760" height="580" allowfullscreen></iframe>
 	<p><img src="img/map1.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-		<button class="modal-class">ЗАКРЫТЬ</button>
+		<button class="modal-close">ЗАКРЫТЬ</button>
 	</section>
+<script src="js/script.js"></script>
 </body>
 </html>
-

@@ -7,7 +7,7 @@
 </head>
 <body class="innerpage">
 	<header class="main-header">
-		<nav class="main-navigation comtainer">
+		<nav class="main-navigation container">
 				<a class="main-header-logo" href="index.html">
 					<img src="img\logo.png" width="111" height="24">
 				</a>
@@ -241,7 +241,7 @@
 	</footer>
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите свой личный логин и пароль</p>
+		<p class="modal-description">Введите свой личный логин и пароль</p>
 		<form class="login-form" method="post" action="#">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
@@ -252,16 +252,17 @@
 				<input class="login-icon-password" type="text" name="password" placeholder="Пароль" id="user-password">
 			</p>	
 			<p class="rememberme">
-				<label class="checkbox">
+				<label class="login-checkbox">
 					<input type="checkbox" name="remember" class="visually-hidden">
 					<span class="checkboxindicator"></span>
 					Запомните меня
 				</label>
 				<a class="forget" href="#">Я забыл пароль</a>
 			</p>
-			<button class="button">ВОЙТИ</button>	
+			<button class="button" type="submit">ВОЙТИ</button>	
 		</form>
-		<button class="modal-class">ЗАКРЫТЬ</button>
+		<button class="modal-close" type="button">ЗАКРЫТЬ</button>
 	</section>
+	<script src="js/script.js"></script>
 </body>
 </html>
