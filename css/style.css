@@ -417,16 +417,18 @@ input[type="radio"].visually-hidden{
   display: none;
 }
 .modal-map{
-  display: none;
   top: 50%;
   left: 50%;
+
   width: 766px;
   height: 561px;
   margin-top: -280px;
   margin-left: -390px;
+  display: none;
+
   border: 7px solid white;
 }
-.modal-map p{
+.modal-map p {
   margin:0;
 }
 @keyframes flylog {
@@ -1008,7 +1010,24 @@ input[type="radio"].visually-hidden{
   margin: 0;
   margin-bottom: 15px;
 }
-
+.site-navigation-current{
+  position: relative;
+}
+.site-navigation-current a[href]{
+  background-color: #333;
+}
+.site-navigation-current a:not[href]{
+  background-color: #000000;
+}
+.site-navigation-current::after{
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #ffffff;
+}
 .fcontact{
   margin:0;
   margin-right: 80px;

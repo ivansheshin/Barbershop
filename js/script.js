@@ -63,3 +63,12 @@ window.addEventListener("keydown", function(evt){
 		}
 	}
 });
+
+window.addEventListener("keydown", function(evt){
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (mpopup.classList.contains("modal-show")) {
+			mpopup.classList.remove("modal-show");
+		}
+	}
+});
